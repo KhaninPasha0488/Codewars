@@ -21,7 +21,7 @@ function multiply(number){
    return number * b
    }
 
-   unction multiply(number){
+   function multiply(number){
       var str = String(Math.abs(number)).length;
       return number * 5 ** str;
       }
@@ -35,4 +35,3 @@ function multiply(number){
 
          multiply = (number) => number * Math.pow(5,Math.abs(number).toString().length)
 
-         
