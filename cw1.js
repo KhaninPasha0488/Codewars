@@ -35,3 +35,8 @@ function multiply(number){
 
          multiply = (number) => number * Math.pow(5,Math.abs(number).toString().length)
 
+         var array = ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten"];
+         function switchItUp(number) {
+         var i = number ;
+         return array[i] ;
+         }
