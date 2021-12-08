@@ -9,7 +9,7 @@ function boolToWord(bool){
    
  }
 
- unction boolToWord( bool ){
+ function boolToWord( bool ){
    return bool ? 'Yes':'No';
  }
  var stringToNumber = function(str){
@@ -24,8 +24,8 @@ function boolToWord(bool){
    var o = '';
    for (var i = s.length - 1; i >= 0; i--)
      o += s[i];
-   return o;
-   // Повтор строки
+   return o}
+   // Повтор строки;
    function repeatStr (n, s) {
     return s.repeat(n);
   }

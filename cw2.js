@@ -9,7 +9,7 @@ function iceBrickVolume(radius, bottleLength, rimLength) {
      var c = b - rimLength;
    }
    return a * c;
- }
+ };
  const iceBrickVolume = (radius, bottleLength, rimLength) =>
   (bottleLength - rimLength) * 2 * radius ** 2;
 
@@ -25,4 +25,4 @@ var name = a +""+ b;
 var stringToNumber = function(str){
   // put your code here
   return Number(str)
-}
+};
