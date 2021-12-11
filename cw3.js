@@ -30,3 +30,20 @@ function boolToWord(bool){
     return s.repeat(n);
   }
   repeatStr = (n, s) => s.repeat(n)
+
+  function cockroachSpeed(s) {
+    return Math.floor(s * 100000 / 3600)
+  }
+  function otherAngle(a, b) {
+    return 180-(a +b );
+  }
+  //  Twice as old
+  function twiceAsOld(p,s) {
+    var ye = s * 2;
+    if(p > ye){
+      return p - ye;
+    }else{
+      return ye - p;
+    }
+      
+  }
