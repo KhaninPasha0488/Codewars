@@ -66,3 +66,77 @@ function move (p, r) {
     var s =[]
     return s
     const zeroFuel = (d, m, f) => m*f>=d?true:false
+
+ //   // Remove First and Last Character Part Two
+
+ function array(a){
+  let b = a.split(',')
+   let f =[]
+   if (b.length >2){
+ for (let i = 1; i< b.length-1 ; i++){
+ 
+ f.push(b[i])
+ }
+   return f.join(" ")
+ }else{
+   return null
+ }
+ }
+
+ //Sum The Strings
+ function sumStr(a,b) {
+  return String(Number(a) + Number(b))
+}
+//Remove First and Last Character
+function removeChar(str){
+  let b = str.split("")
+   b.pop()
+    b.shift()
+   return b.join('')
+  
+  };
+  
+  function removeChar(str) { //Удалить певую и поледнюю(срока без первой и последней буквы)
+    return str.slice(1, -1);
+  }
+  //Double Char
+  function doubleChar(str) {
+    let f = str.split("")
+    let b = f.map( num => num.repeat(2))
+    return b.join("")
+   }
+//    Test.assertEquals(doubleChar("abcd"), "aabbccdd");
+//    Test.assertEquals(doubleChar("Adidas"), "AAddiiddaass");
+//    Test.assertEquals(doubleChar("1337"), "11333377");
+//    Test.assertEquals(doubleChar("illuminati"), "iilllluummiinnaattii");
+//    Test.assertEquals(doubleChar("123456"), "112233445566");
+//    Test.assertEquals(doubleChar("%^&*("), "%%^^&&**((");
+//  });
+Find the smallest integer in the array
+class SmallestIntegerFinder {
+  
+  findSmallestInt(a) {
+   let min =a[1]
+    for (let i = 0;i < a.length;i++){
+      
+      if (a[i] <= min){
+     min = a[i]
+   }
+     
+    }
+      return  min
+      }
+        
+     }
+     assert.strictEqual(sif.findSmallestInt([78,56,232,12,8]),8,'Should return the smallest int 8');
+     assert.strictEqual(sif.findSmallestInt([78,56,232,12,18]),12,'Should return the smallest int 12');
+     assert.strictEqual(sif.findSmallestInt([78,56,232,412,228]),56,'Should return the smallest int 56');
+     assert.strictEqual(sif.findSmallestInt([78,56,232,12,0]),0,'Should return the smallest int 0');
+     assert.strictEqual(sif.findSmallestInt([1,56,232,12,8]),1,'Should return the smallest int 1');
+
+     class SmallestIntegerFinder {
+      findSmallestInt(args) {
+        return Math.min(...args)
+      }
+    }
+    
