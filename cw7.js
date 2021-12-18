@@ -44,3 +44,6 @@ function stringToArray(string){
 // Is it even?
 
   const testEven=(n) =>n%2==0
+
+  const greet =(n, o) => n ==o?'Hello boss':'Hello guest'
+  
