@@ -58,4 +58,6 @@ function stringToArray(string){
       return 0
     }
     
-    
+// Even or Odd
+const even_or_odd=(n)=> n%2==0?"Even":"Odd"
+
