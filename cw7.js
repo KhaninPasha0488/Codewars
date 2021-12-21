@@ -61,3 +61,8 @@ function stringToArray(string){
 // Even or Odd
 const even_or_odd=(n)=> n%2==0?"Even":"Odd"
 
+// Beginner Series #2 Clock
+
+function past(h, m, s){
+  return (h * 3600000)+(m * 60000)+(s*1000)
+}
