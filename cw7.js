@@ -61,8 +61,25 @@ function stringToArray(string){
 // Even or Odd
 const even_or_odd=(n)=> n%2==0?"Even":"Odd"
 
-// Beginner Series #2 Clock
-
-function past(h, m, s){
-  return (h * 3600000)+(m * 60000)+(s*1000)
-}
+      function expressionMatter(a, b, c) {
+          let g = 0
+          let r = [];
+          let a1 = a *( b + c)
+          let a2 = a * b * c
+          let  a3 = a + b * c
+          let a4 = (a + b) * c
+          let a5 = a * b + c
+          let a6 = a + b + c
+          r.push(a1);
+          r.push(a2);
+          r.push(a3);
+          r.push(a4);
+          r.push(a5);
+          r.push(a6);
+          for (let i = 0;i < r.length; i++){
+              if(r[i] > g){
+                  g = r[i]
+              }
+          }
+          return g
+      }
