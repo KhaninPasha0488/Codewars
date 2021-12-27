@@ -8,3 +8,12 @@ function positiveSum(arr) {
    }
  return s
  }
+ function between(a, b) {
+  let cr =[]
+  if(a <b){
+    for (let i=a;i<b+1; i++){
+       cr.push(i)
+  }
+    return cr
+    }
+}
