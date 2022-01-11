@@ -29,3 +29,20 @@ function yearDays(year) {
     return year + ' has 366 days';
   }
 }
+
+function cockroachSpeed(s) {
+  return Math.floor(s * 100000 / 3600)
+}
+function otherAngle(a, b) {
+  return 180-(a +b );
+}
+//  Twice as old
+function twiceAsOld(p,s) {
+  var ye = s * 2;
+  if(p > ye){
+    return p - ye;
+  }else{
+    return ye - p;
+  }
+    
+}
